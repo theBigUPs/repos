@@ -1,0 +1,10 @@
+﻿  merge_quick_radix.c
+c:\users\admin\source\repos\sorting_quickly\sorting_quickly\merge_quick_radix.c(7): warning C4018: '<': signed/unsigned mismatch
+c:\users\admin\source\repos\sorting_quickly\sorting_quickly\merge_quick_radix.c(15): warning C4018: '<': signed/unsigned mismatch
+c:\users\admin\source\repos\sorting_quickly\sorting_quickly\merge_quick_radix.c(26): warning C4018: '<': signed/unsigned mismatch
+c:\users\admin\source\repos\sorting_quickly\sorting_quickly\merge_quick_radix.c(48): warning C4018: '<': signed/unsigned mismatch
+c:\users\admin\source\repos\sorting_quickly\sorting_quickly\merge_quick_radix.c(175): warning C4018: '<': signed/unsigned mismatch
+c:\users\admin\source\repos\sorting_quickly\sorting_quickly\merge_quick_radix.c(183): warning C4018: '<': signed/unsigned mismatch
+c:\users\admin\source\repos\sorting_quickly\sorting_quickly\merge_quick_radix.c(198): warning C4018: '<': signed/unsigned mismatch
+c:\users\admin\source\repos\sorting_quickly\sorting_quickly\merge_quick_radix.c(201): warning C4018: '<': signed/unsigned mismatch
+  sorting_quickly.vcxproj -> C:\Users\Admin\source\repos\sorting_quickly\Debug\sorting_quickly.exe

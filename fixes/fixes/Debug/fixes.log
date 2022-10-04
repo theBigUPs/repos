@@ -1,0 +1,7 @@
+﻿  Source.c
+c:\users\admin\source\repos\fixes\fixes\source.c(31): warning C4133: '=': incompatible types - from 'node *' to 'node *'
+c:\users\admin\source\repos\fixes\fixes\source.c(29): warning C4133: 'initializing': incompatible types - from 'node *' to 'node *'
+c:\users\admin\source\repos\fixes\fixes\source.c(43): warning C4133: '=': incompatible types - from 'node *' to 'node *'
+c:\users\admin\source\repos\fixes\fixes\source.c(61): warning C4018: '<': signed/unsigned mismatch
+c:\users\admin\source\repos\fixes\fixes\source.c(26): warning C4715: 'top': not all control paths return a value
+  fixes.vcxproj -> C:\Users\Admin\source\repos\fixes\Debug\fixes.exe

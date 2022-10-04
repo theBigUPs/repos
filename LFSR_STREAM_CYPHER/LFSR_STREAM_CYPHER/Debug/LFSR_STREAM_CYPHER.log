@@ -1,0 +1,4 @@
+﻿  stream_lfsr.c
+c:\users\admin\source\repos\lfsr_stream_cypher\lfsr_stream_cypher\stream_lfsr.c(7): warning C4244: 'initializing': conversion from 'time_t' to 'uint32_t', possible loss of data
+c:\users\admin\source\repos\lfsr_stream_cypher\lfsr_stream_cypher\stream_lfsr.c(22): warning C4018: '<': signed/unsigned mismatch
+  LFSR_STREAM_CYPHER.vcxproj -> C:\Users\Admin\source\repos\LFSR_STREAM_CYPHER\Debug\LFSR_STREAM_CYPHER.exe

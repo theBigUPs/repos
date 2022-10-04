@@ -1,0 +1,7 @@
+﻿  encode_decode.c
+c:\users\admin\source\repos\huffman_encoding_decodimg\huffman_encoding_decodimg\encode_decode.c(11): warning C4018: '<': signed/unsigned mismatch
+c:\users\admin\source\repos\huffman_encoding_decodimg\huffman_encoding_decodimg\encode_decode.c(38): warning C4018: '<': signed/unsigned mismatch
+c:\users\admin\source\repos\huffman_encoding_decodimg\huffman_encoding_decodimg\encode_decode.c(44): warning C4018: '<': signed/unsigned mismatch
+c:\users\admin\source\repos\huffman_encoding_decodimg\huffman_encoding_decodimg\tree.h(103): warning C4715: 'find': not all control paths return a value
+c:\users\admin\source\repos\huffman_encoding_decodimg\huffman_encoding_decodimg\tree.h(167): warning C4715: 'predecesor': not all control paths return a value
+  huffman_encoding_decodimg.vcxproj -> C:\Users\Admin\source\repos\huffman_encoding_decodimg\Debug\huffman_encoding_decodimg.exe
