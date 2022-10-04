@@ -1,0 +1,4 @@
+﻿  XOR_HASH.c
+c:\users\admin\source\repos\xor_hash\xor_hash\xor_hash.c(12): warning C4018: '<': signed/unsigned mismatch
+c:\users\admin\source\repos\xor_hash\xor_hash\xor_hash.c(23): warning C4018: '<': signed/unsigned mismatch
+  XOR_hash.vcxproj -> C:\Users\Admin\source\repos\XOR_hash\Debug\XOR_hash.exe

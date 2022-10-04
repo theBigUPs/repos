@@ -1,0 +1,15 @@
+﻿  genetic_sorting.c
+c:\users\admin\source\repos\genetic_sort\genetic_sort\genetic_sorting.c(18): warning C4018: '<': signed/unsigned mismatch
+c:\users\admin\source\repos\genetic_sort\genetic_sort\genetic_sorting.c(38): warning C4018: '<': signed/unsigned mismatch
+c:\users\admin\source\repos\genetic_sort\genetic_sort\genetic_sorting.c(51): warning C4018: '<': signed/unsigned mismatch
+c:\users\admin\source\repos\genetic_sort\genetic_sort\genetic_sorting.c(97): warning C4018: '<': signed/unsigned mismatch
+c:\users\admin\source\repos\genetic_sort\genetic_sort\genetic_sorting.c(99): warning C4018: '<': signed/unsigned mismatch
+c:\users\admin\source\repos\genetic_sort\genetic_sort\genetic_sorting.c(119): warning C4018: '<': signed/unsigned mismatch
+c:\users\admin\source\repos\genetic_sort\genetic_sort\genetic_sorting.c(222): warning C4018: '<': signed/unsigned mismatch
+c:\users\admin\source\repos\genetic_sort\genetic_sort\genetic_sorting.c(227): warning C4018: '<': signed/unsigned mismatch
+c:\users\admin\source\repos\genetic_sort\genetic_sort\genetic_sorting.c(234): warning C4018: '<': signed/unsigned mismatch
+c:\users\admin\source\repos\genetic_sort\genetic_sort\genetic_sorting.c(268): warning C4018: '<': signed/unsigned mismatch
+c:\users\admin\source\repos\genetic_sort\genetic_sort\genetic_sorting.c(271): warning C4018: '<': signed/unsigned mismatch
+c:\users\admin\source\repos\genetic_sort\genetic_sort\genetic_sorting.c(309): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\admin\source\repos\genetic_sort\genetic_sort\genetic_sorting.c(59): warning C4715: 'mark': not all control paths return a value
+  genetic_sort.vcxproj -> C:\Users\Admin\source\repos\genetic_sort\Debug\genetic_sort.exe

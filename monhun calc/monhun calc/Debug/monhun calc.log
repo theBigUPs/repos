@@ -1,0 +1,8 @@
+﻿  monhun_fu.c
+c:\users\admin\source\repos\monhun calc\monhun calc\monhun_fu.c(6): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\admin\source\repos\monhun calc\monhun calc\monhun_fu.c(15): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\admin\source\repos\monhun calc\monhun calc\monhun_fu.c(28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\admin\source\repos\monhun calc\monhun calc\monhun_fu.c(29): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\admin\source\repos\monhun calc\monhun calc\monhun_fu.c(30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\admin\source\repos\monhun calc\monhun calc\monhun_fu.c(42): warning C4305: 'function': truncation from 'double' to 'float'
+  monhun calc.vcxproj -> C:\Users\Admin\source\repos\monhun calc\Debug\monhun calc.exe

@@ -1,0 +1,4 @@
+﻿  binary_tree.c
+c:\users\admin\source\repos\tree\tree\binary_tree.c(103): warning C4715: 'find': not all control paths return a value
+c:\users\admin\source\repos\tree\tree\binary_tree.c(167): warning C4715: 'predecesor': not all control paths return a value
+  tree.vcxproj -> C:\Users\Admin\source\repos\tree\Debug\tree.exe

@@ -1,0 +1,5 @@
+﻿  Source.c
+c:\users\admin\source\repos\chip8\chip8\source.c(32): warning C4047: 'return': 'int *' differs in levels of indirection from 'int'
+c:\users\admin\source\repos\chip8\chip8\source.c(36): warning C4101: 'j': unreferenced local variable
+c:\users\admin\source\repos\chip8\chip8\source.c(231): warning C4101: 'arr': unreferenced local variable
+  chip8.vcxproj -> C:\Users\Admin\source\repos\chip8\Debug\chip8.exe
