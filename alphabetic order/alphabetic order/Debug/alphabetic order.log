@@ -1,7 +1,0 @@
-﻿  alpha.c
-c:\users\admin\source\repos\alphabetic order\alphabetic order\alpha.c(44): warning C4013: 'strlen' undefined; assuming extern returning int
-c:\users\admin\source\repos\alphabetic order\alphabetic order\alpha.c(63): warning C4018: '<': signed/unsigned mismatch
-c:\users\admin\source\repos\alphabetic order\alphabetic order\alpha.c(76): warning C4013: 'strcpy' undefined; assuming extern returning int
-c:\users\admin\source\repos\alphabetic order\alphabetic order\alpha.c(83): warning C4018: '<': signed/unsigned mismatch
-c:\users\admin\source\repos\alphabetic order\alphabetic order\alpha.c(117): warning C4018: '<': signed/unsigned mismatch
-  alphabetic order.vcxproj -> C:\Users\Admin\source\repos\alphabetic order\Debug\alphabetic order.exe

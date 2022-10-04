@@ -1,4 +1,0 @@
-﻿  bfs.c
-c:\users\admin\source\repos\graph_dfs_bfs\graph_dfs_bfs\graph.h(37): warning C4018: '<': signed/unsigned mismatch
-c:\users\admin\source\repos\graph_dfs_bfs\graph_dfs_bfs\bfs.c(20): warning C4716: 'BFS': must return a value
-  graph_dfs_bfs.vcxproj -> C:\Users\Admin\source\repos\graph_dfs_bfs\Debug\graph_dfs_bfs.exe

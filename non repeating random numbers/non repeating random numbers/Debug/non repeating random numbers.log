@@ -1,5 +1,0 @@
-﻿  non_rep_rng.c
-c:\users\admin\source\repos\non repeating random numbers\non repeating random numbers\non_rep_rng.c(18): warning C4018: '<': signed/unsigned mismatch
-c:\users\admin\source\repos\non repeating random numbers\non repeating random numbers\non_rep_rng.c(54): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\admin\source\repos\non repeating random numbers\non repeating random numbers\non_rep_rng.c(58): warning C4018: '<': signed/unsigned mismatch
-  non repeating random numbers.vcxproj -> C:\Users\Admin\source\repos\non repeating random numbers\Debug\non repeating random numbers.exe

@@ -1,3 +1,0 @@
-﻿  Source.c
-c:\users\admin\source\repos\linked_list\linked_list\source.c(25): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'node'
-  linked_list.vcxproj -> C:\Users\Admin\source\repos\linked_list\Debug\linked_list.exe

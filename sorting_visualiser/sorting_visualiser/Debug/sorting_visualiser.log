@@ -1,7 +1,0 @@
-﻿  sorting_visualiser.c
-c:\users\admin\source\repos\sorting_visualiser\sorting_visualiser\sorting_visualiser.c(26): warning C4018: '<': signed/unsigned mismatch
-c:\users\admin\source\repos\sorting_visualiser\sorting_visualiser\sorting_visualiser.c(28): warning C4018: '<': signed/unsigned mismatch
-c:\users\admin\source\repos\sorting_visualiser\sorting_visualiser\sorting_visualiser.c(41): warning C4018: '<': signed/unsigned mismatch
-c:\users\admin\source\repos\sorting_visualiser\sorting_visualiser\sorting_visualiser.c(59): warning C4013: 'time' undefined; assuming extern returning int
-c:\users\admin\source\repos\sorting_visualiser\sorting_visualiser\sorting_visualiser.c(61): warning C4018: '<': signed/unsigned mismatch
-  sorting_visualiser.vcxproj -> C:\Users\Admin\source\repos\sorting_visualiser\Debug\sorting_visualiser.exe

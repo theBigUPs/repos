@@ -1,5 +1,0 @@
-﻿  graph_list.c
-c:\users\admin\source\repos\graph\graph\graph_list.c(40): warning C4018: '<': signed/unsigned mismatch
-  graph_matrix.c
-  Generating Code...
-  graph.vcxproj -> C:\Users\Admin\source\repos\graph\Debug\graph.exe

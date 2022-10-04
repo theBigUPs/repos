@@ -1,5 +1,0 @@
-﻿  Source.c
-c:\users\admin\source\repos\stack\stack\source.c(23): warning C4133: '=': incompatible types - from 'node *' to 'node *'
-c:\users\admin\source\repos\stack\stack\source.c(21): warning C4133: 'initializing': incompatible types - from 'node *' to 'node *'
-c:\users\admin\source\repos\stack\stack\source.c(33): warning C4133: '=': incompatible types - from 'node *' to 'node *'
-  stack.vcxproj -> C:\Users\Admin\source\repos\stack\Debug\stack.exe

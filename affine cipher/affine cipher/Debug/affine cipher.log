@@ -1,3 +1,0 @@
-﻿  affine_cipher.c
-c:\users\admin\source\repos\affine cipher\affine cipher\affine_cipher.c(43): warning C4018: '<': signed/unsigned mismatch
-  affine cipher.vcxproj -> C:\Users\Admin\source\repos\affine cipher\Debug\affine cipher.exe

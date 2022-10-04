@@ -1,4 +1,0 @@
-﻿  Searching.c
-c:\users\admin\source\repos\searching algorithms\searching algorithms\searching.c(67): warning C4018: '<': signed/unsigned mismatch
-c:\users\admin\source\repos\searching algorithms\searching algorithms\searching.c(61): warning C4715: 'binary_search': not all control paths return a value
-  searching algorithms.vcxproj -> C:\Users\Admin\source\repos\searching algorithms\Debug\searching algorithms.exe
