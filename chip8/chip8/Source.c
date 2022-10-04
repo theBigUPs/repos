@@ -196,7 +196,7 @@ void opcodes(uint16_t two_byte_machine_code,chip8state *c8)
 		case 0x0f: 						
 			switch (lower_byte)
 			{
-				case 0x07:; break;  //Vx = get_delay()
+				case 0x07: c8->v[upper_byte & 0x0f] = c8->delay_timer ; break;  //Vx = get_delay()
 				case 0x0a:; break;  //Vx = get_delay() A key press is awaited, and then stored in VX (blocking operation, all instruction halted until next key event).
 
 				case 0x15: c8->delay_timer = c8->v[upper_byte & 0x0f]; break;  //delay_timer(Vx)
