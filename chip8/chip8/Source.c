@@ -3,6 +3,13 @@
 #include <SDL.h>
 #pragma warning(disable:4996)
 
+typedef enum bool
+{
+	true = 1,
+	false = 0
+}bool;
+
+
 
 typedef struct chip8
 {
@@ -228,85 +235,71 @@ int main()
 
 	fptr1 = fopen("Fishie.ch8", "rb");
 
-	uint8_t *arr;
+	//uint8_t *arr;
 	//arr = file_to_arr(fptr1);
 	
 	//unsigned char memory[0x1000];
 
 	//printf("%d", sizeof(memory));
-	uint16_t k = 0x1456;
+	//uint16_t k = 0x1456;
 
-	printf("%x",k&0xff);
-
-
+	//printf("%x",k&0xff);
 
 	fclose(fptr1);
-
 
 	
 
 
+	SDL_Rect rect;
+	rect.x = 0;
+	rect.y = 0;
+	rect.w = 10;
+	rect.h = 10;
+
+	
+	SDL_Window* window = NULL;
+	SDL_Renderer* renderer = NULL;
+
+	window = SDL_CreateWindow("chip 8 emulator hopefully",SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,680, 320,0);
+	SDL_Surface *window_surface = SDL_GetWindowSurface(window);
+	SDL_UpdateWindowSurface(window);
+	//SDL_Delay(1000);
+	renderer = SDL_CreateRenderer(window,-1, SDL_RENDERER_ACCELERATED);
 
 
 
+	
+	//SDL_Quit();
 
-
-
-
-
-
-
-
-	if (SDL_Init(SDL_INIT_VIDEO) == 0) {
-		SDL_Window* window = NULL;
-		SDL_Renderer* renderer = NULL;
-
-		if (SDL_CreateWindowAndRenderer(640, 480, 0, &window, &renderer) == 0) {
-			SDL_bool done = SDL_FALSE;
-
-			while (!done) {
-				SDL_Event event;
-
-				SDL_SetRenderDrawColor(renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
-				SDL_RenderClear(renderer);
-
-				SDL_SetRenderDrawColor(renderer, 255, 255, 255, SDL_ALPHA_OPAQUE);
-				SDL_RenderDrawLine(renderer, 320, 200, 300, 240);
-				SDL_RenderDrawLine(renderer, 300, 240, 340, 240);
-				SDL_RenderDrawLine(renderer, 340, 240, 320, 200);
-				SDL_RenderPresent(renderer);
-
-				while (SDL_PollEvent(&event)) {
-					if (event.type == SDL_QUIT) {
-						done = SDL_TRUE;
-					}
-				}
+	bool keep_window_open = true;
+	while (keep_window_open)
+	{
+		SDL_Event e;
+		while (SDL_PollEvent(&e) > 0)
+		{
+			switch (e.type)
+			{
+			case SDL_QUIT:
+				keep_window_open = false;
+				break;
 			}
-		}
 
-		if (renderer) {
-			SDL_DestroyRenderer(renderer);
-		}
-		if (window) {
-			SDL_DestroyWindow(window);
+			SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+			SDL_RenderClear(renderer);
+
+			SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+
+
+			SDL_RenderFillRect(renderer, &rect);
+
+			
+
+			SDL_RenderPresent(renderer);
+
+
+			//SDL_UpdateWindowSurface(window);
 		}
 	}
-	SDL_Quit();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
