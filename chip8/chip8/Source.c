@@ -15,7 +15,7 @@ typedef struct chip8
 {
 	uint8_t v[16]; //16 8 bit long data registers
 	uint16_t instruction_pointer;
-	uint16_t adress_register_I;//should technically be 12 bits wide can be and'ed with 0x0fff to achieve this length but not necessary
+	uint16_t adress_register_I;// I is 12 bits wide
 	uint16_t stack_pointer;
 	uint16_t program_counter;
 	uint8_t delay_timer;
@@ -227,6 +227,33 @@ void opcodes(uint16_t two_byte_machine_code,chip8state *c8)
 
 }
 
+
+
+
+
+
+void setColor(SDL_Surface *surface, SDL_Color color) {
+	Uint32 *pixels = (Uint32 *)surface->pixels;            // Get the pixels from the Surface
+
+	// Iterrate through the pixels and chagne the color
+	for (int i = 0; i<100; i++) 
+	{
+		//if (pixels[i] == SDL_MapRGB(surface->format, 0xFF, 0xFF, 0xFF))        // Search for white pixels
+			pixels[i] = SDL_MapRGB(surface->format, color.r, color.b, color.g);
+	}
+}
+
+
+
+
+void draw_test(SDL_Renderer* renderer,int x,int y)
+{
+	SDL_SetRenderDrawColor(renderer, 0, 255, 255, 255);
+	SDL_RenderDrawPoint(renderer, x, y);
+}
+
+
+
 int main()
 {
 
@@ -251,16 +278,16 @@ int main()
 
 
 	SDL_Rect rect;
-	rect.x = 0;
-	rect.y = 0;
-	rect.w = 10;
-	rect.h = 10;
+	rect.x = 10;
+	rect.y = 10;
+	rect.w = 1;
+	rect.h = 1;
 
 	
 	SDL_Window* window = NULL;
 	SDL_Renderer* renderer = NULL;
 
-	window = SDL_CreateWindow("chip 8 emulator hopefully",SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,680, 320,0);
+	window = SDL_CreateWindow("chip 8 emulator hopefully",SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,640, 320,0);
 	SDL_Surface *window_surface = SDL_GetWindowSurface(window);
 	SDL_UpdateWindowSurface(window);
 	//SDL_Delay(1000);
@@ -284,16 +311,23 @@ int main()
 				break;
 			}
 
-			SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+			SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0);
 			SDL_RenderClear(renderer);
 
-			SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+
+			//SDL_SetRenderDrawColor(renderer, 0, 255, 255, 255);
+			//SDL_RenderDrawPoint(renderer, 120, 120);
+			
+			for (size_t i = 0; i < 100; i++)
+			{
+				draw_test(renderer, i, i);
+			}
 
 
-			SDL_RenderFillRect(renderer, &rect);
+
 
 			
-
+			//SDL_UpdateWindowSurface(window);
 			SDL_RenderPresent(renderer);
 
 
