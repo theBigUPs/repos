@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
+#include <stdlib.h>
+#include <time.h>
 #include <SDL.h>
 #pragma warning(disable:4996)
 
@@ -56,9 +58,16 @@ int *file_to_arr(FILE *f)
 }
 
 
-void display_clear()
+void display_clear(SDL_Renderer* renderer)
 {
-	printf("display clear");
+	for (size_t i = 0; i < 640; i++)
+	{
+		for (size_t j = 0; j < 320; i++)
+		{
+			SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+			SDL_RenderDrawPoint(renderer, i, j);
+		}
+	}
 }
 
 void return_from_subroutine()
@@ -80,7 +89,8 @@ void call_subroutine(uint16_t two_byte_machine_code, chip8state *c8)
 
 uint8_t random_8_bit_num()
 {
-	return 5;
+	uint8_t num = (rand() % 256);
+	return num;
 }
 
 
@@ -94,7 +104,38 @@ void draw(uint8_t vx, uint8_t vy, uint8_t n)
 }
 
 
-void opcodes(uint16_t two_byte_machine_code,chip8state *c8)
+
+void reg_dump(chip8state *c8)
+{
+	for (size_t i = 0; i < 16; i++)
+	{
+		c8->memory[c8->adress_register_I + i] = c8->v[i];
+
+	}
+}
+
+
+void reg_load(chip8state *c8)
+{
+	for (size_t i = 0; i < 16; i++)
+	{
+		c8->v[i] = c8->memory[c8->adress_register_I + i];
+
+	}
+}
+
+
+void set_BCD(chip8state *c8,uint8_t vx )
+{
+	c8->memory[c8->adress_register_I] = (vx / 100);
+	c8->memory[c8->adress_register_I + 1] = (vx % 100) / 10;
+	c8->memory[c8->adress_register_I + 2] = (vx % 10);
+	
+}
+
+
+
+void opcodes(uint16_t two_byte_machine_code,chip8state *c8, SDL_Renderer* renderer)
 {
 
 	int upper_byte = two_byte_machine_code >>8; // upper byte is something like 0x12 of 0x1256
@@ -104,7 +145,7 @@ void opcodes(uint16_t two_byte_machine_code,chip8state *c8)
 		case 0x00: 
 			switch (lower_byte)
 			{
-				case 0xe0: display_clear(); break;
+				case 0xe0: display_clear(renderer); break;
 				case 0xee: return_from_subroutine(); break;
 				default:
 					break;
@@ -213,9 +254,9 @@ void opcodes(uint16_t two_byte_machine_code,chip8state *c8)
 				case 0x1e: c8->adress_register_I += c8->v[upper_byte & 0x0f]; break;  //I += Vx
 
 				case 0x29:; break;//I = sprite_addr[Vx] Sets I to the location of the sprite for the character in VX. Characters 0-F in hexadecimal are represented by a 4x5 font.
-				case 0x33:; break;//set_BCD(Vx)*(I + 0) = BCD(3);*(I + 1) = BCD(2);*(I + 2) = BCD(1);
-				case 0x55:; break;//reg_dump(Vx, &I)
-				case 0x66:; break;//reg_load(Vx, &I)
+				case 0x33:set_BCD(c8, c8->v[upper_byte & 0x0f]); break;//set_BCD(Vx)*(I + 0) = BCD(3);*(I + 1) = BCD(2);*(I + 2) = BCD(1);
+				case 0x55:reg_dump(c8); break;//reg_dump(Vx, &I)
+				case 0x66:reg_load(c8, c8->v[upper_byte & 0x0f]); break;//reg_load(Vx, &I)
 				default:
 					break;
 			}			
@@ -232,20 +273,6 @@ void opcodes(uint16_t two_byte_machine_code,chip8state *c8)
 
 
 
-void setColor(SDL_Surface *surface, SDL_Color color) {
-	Uint32 *pixels = (Uint32 *)surface->pixels;            // Get the pixels from the Surface
-
-	// Iterrate through the pixels and chagne the color
-	for (int i = 0; i<100; i++) 
-	{
-		//if (pixels[i] == SDL_MapRGB(surface->format, 0xFF, 0xFF, 0xFF))        // Search for white pixels
-			pixels[i] = SDL_MapRGB(surface->format, color.r, color.b, color.g);
-	}
-}
-
-
-
-
 void draw_test(SDL_Renderer* renderer,int x,int y)
 {
 	SDL_SetRenderDrawColor(renderer, 0, 255, 255, 255);
@@ -256,7 +283,8 @@ void draw_test(SDL_Renderer* renderer,int x,int y)
 
 int main()
 {
-
+	time_t t;
+	srand((unsigned)time(&t));
 	FILE* fptr1;
 
 
@@ -273,9 +301,6 @@ int main()
 	//printf("%x",k&0xff);
 
 	fclose(fptr1);
-
-	
-
 
 	SDL_Rect rect;
 	rect.x = 10;
@@ -322,10 +347,6 @@ int main()
 			{
 				draw_test(renderer, i, i);
 			}
-
-
-
-
 			
 			//SDL_UpdateWindowSurface(window);
 			SDL_RenderPresent(renderer);
