@@ -1,5 +1,6 @@
 ﻿  Source.c
 c:\users\admin\source\repos\chip8\chip8\source.c(41): warning C4047: 'return': 'int *' differs in levels of indirection from 'int'
 c:\users\admin\source\repos\chip8\chip8\source.c(45): warning C4101: 'j': unreferenced local variable
-c:\users\admin\source\repos\chip8\chip8\source.c(259): warning C4020: 'reg_load': too many actual parameters
+c:\users\admin\source\repos\chip8\chip8\source.c(262): warning C4020: 'reg_load': too many actual parameters
+c:\users\admin\source\repos\chip8\chip8\source.c(300): warning C4013: 'getch' undefined; assuming extern returning int
   chip8.vcxproj -> C:\Users\Admin\source\repos\chip8\Debug\chip8.exe

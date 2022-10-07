@@ -133,7 +133,11 @@ void set_BCD(chip8state *c8,uint8_t vx )
 	
 }
 
-
+uint8_t getkey()
+{
+	int a = getch();
+	return a;
+}
 
 void opcodes(uint16_t two_byte_machine_code,chip8state *c8, SDL_Renderer* renderer)
 {
@@ -234,8 +238,20 @@ void opcodes(uint16_t two_byte_machine_code,chip8state *c8, SDL_Renderer* render
 		case 0x0e: 		
 			switch (lower_byte)
 			{
-				case 0x9e:; break; //if (key() == Vx)	Skips the next instruction if the key stored in VX is pressed
-				case 0xa1:; break; //if (key() != Vx)	Skips the next instruction if the key stored in VX is not pressed
+				case 0x9e: //if (key() == Vx)	Skips the next instruction if the key stored in VX is pressed
+					if (getkey() == c8->v[upper_byte & 0x0f])
+					{
+						c8->program_counter += 2;
+					}
+					break; 
+
+				case 0xa1://if (key() != Vx)	Skips the next instruction if the key stored in VX is not pressed					
+					if (getkey() != c8->v[upper_byte & 0x0f])
+					{
+						c8->program_counter += 2;
+					}
+					break;
+					
 				default:
 					break;
 			}	
@@ -245,7 +261,7 @@ void opcodes(uint16_t two_byte_machine_code,chip8state *c8, SDL_Renderer* render
 			switch (lower_byte)
 			{
 				case 0x07: c8->v[upper_byte & 0x0f] = c8->delay_timer ; break;  //Vx = get_delay()
-				case 0x0a:; break;  //Vx = get_delay() A key press is awaited, and then stored in VX (blocking operation, all instruction halted until next key event).
+				case 0x0a: c8->v[upper_byte & 0x0f] = getkey()  ; break;  //Vx = get_key() A key press is awaited, and then stored in VX (blocking operation, all instruction halted until next key event).
 
 				case 0x15: c8->delay_timer = c8->v[upper_byte & 0x0f]; break;  //delay_timer(Vx)
 
@@ -270,9 +286,6 @@ void opcodes(uint16_t two_byte_machine_code,chip8state *c8, SDL_Renderer* render
 
 
 
-
-
-
 void draw_test(SDL_Renderer* renderer,int x,int y)
 {
 	SDL_SetRenderDrawColor(renderer, 0, 255, 255, 255);
@@ -286,10 +299,10 @@ int main()
 	time_t t;
 	srand((unsigned)time(&t));
 	FILE* fptr1;
-
+	//chip8state *c8 =  malloc(sizeof(chip8state)); //(struct chip8state*)
 
 	fptr1 = fopen("Fishie.ch8", "rb");
-
+	//c8->memory[5] = 12;
 	//uint8_t *arr;
 	//arr = file_to_arr(fptr1);
 	
@@ -297,16 +310,10 @@ int main()
 
 	//printf("%d", sizeof(memory));
 	//uint16_t k = 0x1456;
-
-	//printf("%x",k&0xff);
+	//int a = getch();
+	//printf("%d",a);
 
 	fclose(fptr1);
-
-	SDL_Rect rect;
-	rect.x = 10;
-	rect.y = 10;
-	rect.w = 1;
-	rect.h = 1;
 
 	
 	SDL_Window* window = NULL;
@@ -355,8 +362,6 @@ int main()
 			//SDL_UpdateWindowSurface(window);
 		}
 	}
-
-
 
 	return 0;
 }
