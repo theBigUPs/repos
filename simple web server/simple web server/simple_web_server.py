@@ -1,9 +1,8 @@
-#import socket module
+#http://127.0.0.1:8000/hello.html
+
 import socket
 import sys # In order to terminate the program
 serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-#Prepare a sever socket
-#Fill in start
 
 SERVER_HOST = '0.0.0.0'
 SERVER_PORT = 8000
@@ -11,7 +10,6 @@ SERVER_PORT = 8000
 serverSocket.bind((SERVER_HOST , SERVER_PORT))
 serverSocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 serverSocket.listen(1)
-#Fill in end
 while True:
     #Establish the connection
     
@@ -37,8 +35,6 @@ while True:
         if connectionSocket.fileno() == -1:
             break
     except IOError:
-        #Send response message for file not found
-        #Fill in start
         connectionSocket.send('HTTP/1.1 404 file not found\nContent-Type: text/html\n\n'.encode('utf-8')) 
         connectionSocket.close();
         pass
