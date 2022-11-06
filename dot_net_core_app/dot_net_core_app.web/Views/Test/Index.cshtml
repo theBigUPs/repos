@@ -1,0 +1,37 @@
+﻿
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index test test sdfsdffdffdsf</h1>
+
+
+@{
+
+    var name = ViewBag.name;
+    <p>@name</p>
+}
+
+<p>@name</p>
+
+<p>@ViewBag.name</p>
+
+<p>age: @ViewData["age"]</p>
+
+@foreach (var item in ViewData["names"] as List<string>)
+{
+    <p>@item</p>
+}
+
+
+<p> @ViewBag.person.id - @ViewBag.person.name - @ViewBag.person.age </p>
+
+
+@model List<dot_net_core_app.web.Controllers.TestController.Product2>;
+
+@foreach (var item in Model)
+{
+    <p>@item.Id - @item.name</p>
+}

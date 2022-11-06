@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@*<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>*@
+<partial name="_MenuPartialView" />
+
+@section Css
+{
+    <style>
+
+        h1 
+        {
+            color:red;
+            background-color: aqua;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="~/css/example.css" asp-append-version="true" />
+
+    
+}
+@section Scripts
+{
+    <script type="text/javascript"> 
+        //alert("hello there");
+        $(document).ready(function(){console.log("well hello there");})
+    </script>
+}
+
+<h1>howdy</h1>
+<hr/>
+<h2>welcome to 1997</h2>
+@{
+    var datetime = DateTime.Now.ToShortDateString();
+    var message = "hello";
+
+    @:date : @datetime
+    <div>message: @message</div>
+    <text> @datetime </text>
+}

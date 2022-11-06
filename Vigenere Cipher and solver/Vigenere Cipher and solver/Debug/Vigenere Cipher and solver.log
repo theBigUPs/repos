@@ -4,6 +4,6 @@ c:\users\admin\source\repos\vigenere cipher and solver\vigenere cipher and solve
 c:\users\admin\source\repos\vigenere cipher and solver\vigenere cipher and solver\vegen.c(84): warning C4018: '>': signed/unsigned mismatch
 c:\users\admin\source\repos\vigenere cipher and solver\vigenere cipher and solver\vegen.c(140): warning C4018: '<': signed/unsigned mismatch
 c:\users\admin\source\repos\vigenere cipher and solver\vigenere cipher and solver\vegen.c(156): warning C4018: '<': signed/unsigned mismatch
-c:\users\admin\source\repos\vigenere cipher and solver\vigenere cipher and solver\vegen.c(185): warning C4133: 'function': incompatible types - from 'char *' to 'double *'
-c:\users\admin\source\repos\vigenere cipher and solver\vigenere cipher and solver\vegen.c(192): warning C4133: 'function': incompatible types - from 'char *' to 'double *'
+c:\users\admin\source\repos\vigenere cipher and solver\vigenere cipher and solver\vegen.c(181): warning C4133: 'function': incompatible types - from 'char *' to 'double *'
+c:\users\admin\source\repos\vigenere cipher and solver\vigenere cipher and solver\vegen.c(188): warning C4133: 'function': incompatible types - from 'char *' to 'double *'
   Vigenere Cipher and solver.vcxproj -> C:\Users\Admin\source\repos\Vigenere Cipher and solver\Debug\Vigenere Cipher and solver.exe
