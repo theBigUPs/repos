@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{14c1bf2e-dde7-4a1e-a96c-0e5b2527e192}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile />
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="alphabetic order\alphabetic order\done.txt" />
+    <Content Include="alphabetic order\alphabetic order\ordernt.txt" />
+    <Content Include="chip8\packages\sdl2.2.0.5\build\native\docs\README.txt" />
+    <Content Include="chip8\packages\sdl2.2.0.5\build\publisher-info.txt" />
+    <Content Include="chip8\packages\sdl2.redist.2.0.5\build\publisher-info.txt" />
+    <Content Include="community_detection\community_detection\facebook_edge_list.txt" />
+    <Content Include="community_detection\community_detection\football_edge_list.txt" />
+    <Content Include="community_detection\community_detection\karate_edge_list.txt" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\obj\Debug\net6.0\dot_net_core_app.web.csproj.FileListAbsolute.txt" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\obj\Debug\net6.0\scopedcss\bundle\dot_net_core_app.web.styles.css" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\obj\Debug\net6.0\scopedcss\projectbundle\dot_net_core_app.web.bundle.scp.css" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\Views\Shared\_Layout.cshtml.css" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\css\example.css" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\css\site.css" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\favicon.ico" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\js\site.js" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\jquery\dist\jquery.js" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\jquery\dist\jquery.min.js" />
+    <Content Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\jquery\LICENSE.txt" />
+    <Content Include="simple web server\simple web server\hello.html" />
+    <Content Include="sorting_visualiser\sorting_visualiser\visualised.txt" />
+    <Content Include="subtitle editor\subtitle editor\fin.txt" />
+    <Content Include="subtitle editor\subtitle editor\test.txt" />
+    <Content Include="WebApplication1\WebApplication1\Pages\Shared\_Layout.cshtml.css" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\css\site.css" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\favicon.ico" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\js\site.js" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\jquery\dist\jquery.js" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\jquery\dist\jquery.min.js" />
+    <Content Include="WebApplication1\WebApplication1\wwwroot\lib\jquery\LICENSE.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="community_detection\community_detection\community_detection.py" />
+    <Compile Include="linear_regression\linear_regression\linear_regression.py" />
+    <Compile Include="py_lcg\py_lcg\py_lcg.py" />
+    <Compile Include="py_LFSR\py_LFSR\py_LFSR.py" />
+    <Compile Include="py_pyramid\py_pyramid\py_pyramid.py" />
+    <Compile Include="scheduler_sim\scheduler_sim\200019245_uygar_pervan_scheduler_sim .py" />
+    <Compile Include="scheduler_sim\scheduler_sim\scheduler_sim.py" />
+    <Compile Include="simple web server\simple web server\simple_web_server.py" />
+    <Compile Include="spidy007\spidy007\spidy007.py" />
+    <Compile Include="test\test\test.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="alphabetic order\alphabetic order" />
+    <Folder Include="chip8\packages\sdl2.2.0.5\build" />
+    <Folder Include="chip8\packages\sdl2.2.0.5\build\native\docs" />
+    <Folder Include="chip8\packages\sdl2.redist.2.0.5\build" />
+    <Folder Include="community_detection\community_detection" />
+    <Folder Include="dot_net_core_app\dot_net_core_app.web\obj\Debug\net6.0" />
+    <Folder Include="dot_net_core_app\dot_net_core_app.web\obj\Debug\net6.0\scopedcss\bundle" />
+    <Folder Include="dot_net_core_app\dot_net_core_app.web\obj\Debug\net6.0\scopedcss\projectbundle" />
+    <Folder Include="dot_net_core_app\dot_net_core_app.web\obj\Debug\net6.0\scopedcss\Views\Shared" />
+    <Folder Include="dot_net_core_app\dot_net_core_app.web\Views\Shared" />
+    <Folder Include="dot_net_core_app\dot_net_core_app.web\wwwroot" />
+    <Folder Include="dot_net_core_app\dot_net_core_app.web\wwwroot\css" />
+    <Folder Include="dot_net_core_app\dot_net_core_app.web\wwwroot\js" />
+    <Folder Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\bootstrap\dist\css" />
+    <Folder Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\bootstrap\dist\js" />
+    <Folder Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\jquery" />
+    <Folder Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\jquery-validation-unobtrusive" />
+    <Folder Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\jquery-validation\dist" />
+    <Folder Include="dot_net_core_app\dot_net_core_app.web\wwwroot\lib\jquery\dist" />
+    <Folder Include="linear_regression\linear_regression" />
+    <Folder Include="py_lcg\py_lcg" />
+    <Folder Include="py_LFSR\py_LFSR" />
+    <Folder Include="py_pyramid\py_pyramid" />
+    <Folder Include="scheduler_sim\scheduler_sim" />
+    <Folder Include="simple web server\simple web server" />
+    <Folder Include="sorting_visualiser\sorting_visualiser" />
+    <Folder Include="spidy007\spidy007" />
+    <Folder Include="subtitle editor\subtitle editor" />
+    <Folder Include="test\test" />
+    <Folder Include="WebApplication1\WebApplication1\Pages\Shared" />
+    <Folder Include="WebApplication1\WebApplication1\wwwroot" />
+    <Folder Include="WebApplication1\WebApplication1\wwwroot\css" />
+    <Folder Include="WebApplication1\WebApplication1\wwwroot\js" />
+    <Folder Include="WebApplication1\WebApplication1\wwwroot\lib\bootstrap\dist\css" />
+    <Folder Include="WebApplication1\WebApplication1\wwwroot\lib\bootstrap\dist\js" />
+    <Folder Include="WebApplication1\WebApplication1\wwwroot\lib\jquery" />
+    <Folder Include="WebApplication1\WebApplication1\wwwroot\lib\jquery-validation-unobtrusive" />
+    <Folder Include="WebApplication1\WebApplication1\wwwroot\lib\jquery-validation\dist" />
+    <Folder Include="WebApplication1\WebApplication1\wwwroot\lib\jquery\dist" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

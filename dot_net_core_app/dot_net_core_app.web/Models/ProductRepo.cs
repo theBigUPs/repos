@@ -2,20 +2,26 @@
 {
     public class ProductRepo
     {
-        private List<Product> _products= new List<Product>();
-
-
-        public List<Product> Products()
+        private List<Product> _products = new List<Product>()
         {
-            return _products;   
-        }
+            (new () { Id = 0, Name = "test", Price = 34, Stock = 12 }),
+            (new () { Id = 1, Name = "tes1", Price = 345, Stock = 123 }),
+            (new() { Id = 2, Name = "tes2", Price = 346, Stock = 124 })
+
+        };
+
+        
+
+
+        public List<Product> Products() => _products;
+      
 
         public void Add(Product NewProduct)
         {
             _products.Add(NewProduct);
         }
 
-        public void Remove(int id)
+        public void remove(int id)
         {
             var hasProduct=_products.FirstOrDefault(p => p.Id == id);
             if (hasProduct==null)
